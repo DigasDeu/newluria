@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lúria - Fabricação de Bonecas</title>
+
+  <!-- Fonte Sofia e Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sofia&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- BORBOLETA SEGUIDORA -->
+  <div id="borboleta-seguidora">
+    <img src="borboleta.gif" alt="Borboleta Animada" />
+  </div>
+
+  <!-- TELA DE INTRODUÇÃO -->
+  <div id="intro">
+    <img src="logo.png" alt="Logo Lúria" id="intro-logo" />
+  </div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <img src="logo.png" alt="Logo Lúria" class="logo" id="nav-logo" />
+    <div class="menu">
+      <a href="#proposta">Proposta</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#canais">Canais</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Bem-vinda à Lúria</h1>
+    <p>Bonecas que contam histórias com carinho, inclusão e estilo único.</p>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <div class="duas-colunas">
+      <section id="proposta" class="animate">
+        <h2>Proposta de Valor</h2>
+        <p>Na Lúria, criamos bonecas que representam todas as belezas do mundo. Cada peça carrega significado, inclusão e muito amor.</p>
+      </section>
+
+      <section id="clientes" class="animate">
+        <h2>Segmentos de Clientes</h2>
+        <p class="fonte-sofia">Para crianças, adolescentes e colecionadores apaixonados por autenticidade e representatividade.</p>
+        <img src="borboleta decoração2.webp" class="borboleta-canto esquerda" />
+        <img src="borboleta decoração.webp" class="borboleta-canto direita" />
+      </section>
+    </div>
+
+    <section id="produtos" class="animate">
+      <h2>Nossos Produtos</h2>
+      <div class="produto-box">
+        <!-- Produtos 1 a 4 -->
+        <!-- ...seus blocos de produtos aqui... -->
+      </div>
+    </section>
+
+    <section id="canais" class="animate">
+      <h2>Nossos Canais</h2>
+      <p>Estamos no Instagram, WhatsApp e com atendimento exclusivo em nosso site. Queremos ouvir vocês!</p>
+      <div class="canaxs">
+        <a target="_blank" href="https://www.instagram.com/byluria?igsh=cHZwbzd1eHo5ODQ0">
+          <img width="40px" src="instagram.png" />
+        </a>
+        <a target="_blank" href="https://web.whatsapp.com/#">
+          <img width="40px" src="zap.jpg" />
+        </a>
+      </div>
+    </section>
+
+    <section id="contato" class="animate">
+      <h2>Fale Conosco</h2>
+      <p>Dúvidas, elogios ou sugestões? Entre em contato conosco!</p>
+      <a href="#" class="button">Fale Conosco</a>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Obrigada por nos visitar! © 2025 Lúria</p>
+    <p>Site feito pelos Digas, trabalho feito com carinho por mim Digas, Muito Obrigado ;-;🫦🫶❤️🙄</p>
+    <img width="150px" src="digas.png" />
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // animações ao rolar
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const boxTop = section.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          section.classList.add('animate');
+        }
+      });
+    });
+
+    // intro inicial
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('intro').style.opacity = '0';
+        document.getElementById('intro').style.transform = 'scale(1.2)';
+      }, 1500);
+
+      setTimeout(() => {
+        document.getElementById('intro').style.display = 'none';
+      }, 2500);
+    });
+
+    // borboleta seguidora
+    const borboleta = document.getElementById('borboleta-seguidora');
+    document.addEventListener('mousemove', (e) => {
+      setTimeout(() => {
+        borboleta.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      }, 1000);
+    });
+
+    // glitter
+    document.addEventListener('mousemove', function(e) {
+      const glitter = document.createElement('div');
+      glitter.className = 'glitter';
+      glitter.style.left = e.clientX + 'px';
+      glitter.style.top = e.clientY + 'px';
+      document.body.appendChild(glitter);
+
+      setTimeout(() => {
+        glitter.remove();
+      }, 800);
+    });
+  </script>
+</body>
+</html>
