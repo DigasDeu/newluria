@@ -5,27 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lúria - Fabricação de Bonecas</title>
 
-  <!-- Fonte Sofia e Poppins -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sofia&display=swap" rel="stylesheet">
+  
+  <!-- Ícones FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <!-- CSS externo -->
+  <!-- CSS Externo -->
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
 
-  <!-- BORBOLETA SEGUIDORA -->
+  <!-- Borboleta Seguidora -->
   <div id="borboleta-seguidora">
-    <img src="borboleta.gif" alt="Borboleta Animada" />
+    <img src="img/borboleta.gif" alt="Borboleta animada" />
   </div>
 
-  <!-- TELA DE INTRODUÇÃO -->
+  <!-- Tela de Introdução -->
   <div id="intro">
-    <img src="logo.png" alt="Logo Lúria" id="intro-logo" />
+    <img src="img/logo.png" alt="Logo Lúria" id="intro-logo" />
   </div>
 
-  <!-- NAVBAR -->
+  <!-- Navbar -->
   <nav>
-    <img src="logo.png" alt="Logo Lúria" class="logo" id="nav-logo" />
+    <img src="img/logo.png" alt="Logo Lúria" class="logo" />
     <div class="menu">
       <a href="#proposta">Proposta</a>
       <a href="#clientes">Clientes</a>
@@ -34,13 +37,13 @@
     </div>
   </nav>
 
-  <!-- HEADER -->
+  <!-- Cabeçalho -->
   <header>
     <h1>Bem-vinda à Lúria</h1>
     <p>Bonecas que contam histórias com carinho, inclusão e estilo único.</p>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- Conteúdo Principal -->
   <main>
     <div class="duas-colunas">
       <section id="proposta" class="animate">
@@ -51,16 +54,61 @@
       <section id="clientes" class="animate">
         <h2>Segmentos de Clientes</h2>
         <p class="fonte-sofia">Para crianças, adolescentes e colecionadores apaixonados por autenticidade e representatividade.</p>
-        <img src="borboleta decoração2.webp" class="borboleta-canto esquerda" />
-        <img src="borboleta decoração.webp" class="borboleta-canto direita" />
+        <img src="img/borboleta decoração2.webp" class="borboleta-canto esquerda" alt="Borboleta decorativa esquerda" />
+        <img src="img/borboleta decoração.webp" class="borboleta-canto direita" alt="Borboleta decorativa direita" />
       </section>
     </div>
 
     <section id="produtos" class="animate">
       <h2>Nossos Produtos</h2>
       <div class="produto-box">
-        <!-- Produtos 1 a 4 -->
-        <!-- ...seus blocos de produtos aqui... -->
+        <!-- Produto 1 -->
+        <div class="produto-item">
+          <div class="produto-imagem">
+            <img src="img/bebe1.jpg" alt="Boneca Reborn 1" />
+          </div>
+          <div class="produto-nome">Boneca Reborn 1</div>
+          <div class="produto-preco">
+            <p>R$ 150,00</p>
+            <a href="#" class="butt">Comprar</a>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto-item">
+          <div class="produto-imagem">
+            <img src="img/bebe2.jpg" alt="Boneca Reborn 2" />
+          </div>
+          <div class="produto-nome">Boneca Reborn 2</div>
+          <div class="produto-preco">
+            <p>R$ 150,00</p>
+            <a href="#" class="butt">Comprar</a>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto-item">
+          <div class="produto-imagem">
+            <img src="img/bebe3.webp" alt="Boneca Reborn 3" />
+          </div>
+          <div class="produto-nome">Boneca Reborn 3</div>
+          <div class="produto-preco">
+            <p>R$ 150,00</p>
+            <a href="#" class="butt">Comprar</a>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto-item">
+          <div class="produto-imagem">
+            <img src="img/bebe4.jpg" alt="Boneca Reborn 4" />
+          </div>
+          <div class="produto-nome">Boneca Reborn 4</div>
+          <div class="produto-preco">
+            <p>R$ 150,00</p>
+            <a href="#" class="butt">Comprar</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -68,11 +116,11 @@
       <h2>Nossos Canais</h2>
       <p>Estamos no Instagram, WhatsApp e com atendimento exclusivo em nosso site. Queremos ouvir vocês!</p>
       <div class="canaxs">
-        <a target="_blank" href="https://www.instagram.com/byluria?igsh=cHZwbzd1eHo5ODQ0">
-          <img width="40px" src="instagram.png" />
+        <a href="https://www.instagram.com/byluria?igsh=cHZwbzd1eHo5ODQ0" target="_blank" aria-label="Instagram">
+          <img src="img/instagram.png" width="40" alt="Instagram" />
+        <a href="https://web.whatsapp.com/#" target="_blank" aria-label="WhatsApp">
+          <img src="img/whatsapp.png" width="40" alt="WhatsApp" />
         </a>
-        <a target="_blank" href="https://web.whatsapp.com/#">
-          <img width="40px" src="zap.jpg" />
         </a>
       </div>
     </section>
@@ -88,16 +136,15 @@
     </section>
   </main>
 
-  <!-- RODAPÉ -->
+  <!-- Rodapé -->
   <footer>
     <p>Obrigada por nos visitar! © 2025 Lúria</p>
-    <p>Site feito pelos Digas, trabalho feito com carinho por mim Digas, Muito Obrigado ;-;🫦🫶❤️🙄</p>
-    <img width="150px" src="digas.png" />
+    <p>Site feito pelos Digas, com carinho 🫦🫶❤️🙄</p>
+    <img src="img/digas.png" width="150" alt="Assinatura Digas" />
   </footer>
 
   <!-- JavaScript -->
   <script>
-    // animações ao rolar
     const sections = document.querySelectorAll('section');
     window.addEventListener('scroll', () => {
       const triggerBottom = window.innerHeight * 0.85;
@@ -109,19 +156,16 @@
       });
     });
 
-    // intro inicial
     window.addEventListener('load', () => {
       setTimeout(() => {
         document.getElementById('intro').style.opacity = '0';
         document.getElementById('intro').style.transform = 'scale(1.2)';
       }, 1500);
-
       setTimeout(() => {
         document.getElementById('intro').style.display = 'none';
       }, 2500);
     });
 
-    // borboleta seguidora
     const borboleta = document.getElementById('borboleta-seguidora');
     document.addEventListener('mousemove', (e) => {
       setTimeout(() => {
@@ -129,17 +173,13 @@
       }, 1000);
     });
 
-    // glitter
     document.addEventListener('mousemove', function(e) {
       const glitter = document.createElement('div');
       glitter.className = 'glitter';
       glitter.style.left = e.clientX + 'px';
       glitter.style.top = e.clientY + 'px';
       document.body.appendChild(glitter);
-
-      setTimeout(() => {
-        glitter.remove();
-      }, 800);
+      setTimeout(() => glitter.remove(), 800);
     });
   </script>
 </body>
