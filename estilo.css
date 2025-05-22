@@ -55,7 +55,8 @@ nav .logo {
   outline: none;
 }
 
-.duas-colunas {
+.duas-colunas,
+.sessao-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -63,15 +64,15 @@ nav .logo {
 }
 
 section {
-  margin-bottom: 4rem;
-  max-width: 600px;
-  background: white;
+  margin: 2rem auto;
   padding: 2rem;
+  background: white;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   opacity: 0;
   transform: translateY(50px);
-  transition: all 0.6s ease-in;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  max-width: 800px;
 }
 
 section.animate {
@@ -79,25 +80,30 @@ section.animate {
   transform: translateY(0);
 }
 
-#produtos .produto-box {
+#produtos .produto-box,
+#produtos .produto-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 5rem;
-  padding: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
-.produto-item {
+.produto-item,
+.card {
   background: linear-gradient(to bottom, #f8e1f4, #ffeef9);
   border-radius: 35px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
   position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  will-change: transform;
 }
 
-.produto-item:hover {
+.produto-item:hover,
+.card:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
 }
 
 .produto-imagem img {
@@ -137,12 +143,17 @@ section.animate {
 
 #intro-logo {
   width: 200px;
-  animation: pulse 1s infinite;
+  animation: pulse 1s infinite, brilho 3s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.1); }
+}
+
+@keyframes brilho {
+  0%, 100% { filter: drop-shadow(0 0 5px #fff); }
+  50% { filter: drop-shadow(0 0 15px #f8bbd0); }
 }
 
 #borboleta-seguidora {
@@ -229,6 +240,9 @@ footer {
   text-decoration: none;
   border-radius: 25px;
   transition: background 0.3s;
+  animation: botao-flutuante 1s ease forwards;
+  transform: translateY(20px);
+  opacity: 0;
 }
 
 .button:hover,
@@ -237,20 +251,13 @@ footer {
   outline: none;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
-
-  .duas-colunas {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .produto-box {
-    grid-template-columns: 1fr;
+@keyframes botao-flutuante {
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
 .formulario-feedback {
   display: flex;
   flex-direction: column;
@@ -284,4 +291,21 @@ footer {
   margin-top: 10px;
   font-weight: bold;
   color: #c2185b;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .duas-colunas,
+  .sessao-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-box,
+  .produto-grid {
+    grid-template-columns: 1fr;
+  }
 }
