@@ -251,3 +251,37 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.formulario-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-feedback input,
+.formulario-feedback textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.depoimentos-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.depoimento {
+  background: #ffeef9;
+  border-left: 4px solid #f06292;
+  padding: 15px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.depoimento span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #c2185b;
+}
