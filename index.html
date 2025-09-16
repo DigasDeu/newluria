@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +8,14 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sofia&display=swap" rel="stylesheet">
-  
+
   <!-- Ícones FontAwesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <!-- CSS Externo -->
   <link rel="stylesheet" href="estilo.css" />
 </head>
+
 <body>
 
   <!-- Borboleta Seguidora -->
@@ -30,10 +32,10 @@
   <nav>
     <img src="img/logo.png" alt="Logo Lúria" class="logo" />
     <div class="menu">
-      <a href="#proposta">Proposta</a>
-      <a href="#clientes">Clientes</a>
-      <a href="#canais">Canais</a>
-      <a href="#contato">Contato</a>
+      <a href="#proposta" aria-label="Ir para a seção Proposta" tabindex="0">Proposta</a>
+      <a href="#clientes" aria-label="Ir para a seção Clientes" tabindex="0">Clientes</a>
+      <a href="#canais" aria-label="Ir para a seção Canais" tabindex="0">Canais</a>
+      <a href="#contato" aria-label="Ir para a seção Contato" tabindex="0">Contato</a>
     </div>
   </nav>
 
@@ -48,79 +50,36 @@
     <div class="duas-colunas">
       <section id="proposta" class="animate">
         <h2>Proposta de Valor</h2>
-        <p>Na Lúria, criamos bonecas que representam todas as belezas do mundo. Cada peça carrega significado, inclusão e muito amor.</p>
+        <p>Na Lúria, criamos bonecas que representam todas as belezas do mundo. Cada peça carrega significado, inclusão
+          e muito amor.</p>
       </section>
 
       <section id="clientes" class="animate">
         <h2>Segmentos de Clientes</h2>
-        <p class="fonte-sofia">Para crianças, adolescentes e colecionadores apaixonados por autenticidade e representatividade.</p>
-        <img src="img/borboleta decoração2.webp" class="borboleta-canto esquerda" alt="Borboleta decorativa esquerda" />
-        <img src="img/borboleta decoração.webp" class="borboleta-canto direita" alt="Borboleta decorativa direita" />
+        <p class="fonte-sofia">Para crianças, adolescentes e colecionadores apaixonados por autenticidade e
+          representatividade.</p>
+        <img src="img/borboleta decoração2.webp" class="borboleta-canto esquerda" alt="Borboleta decorativa esquerda"
+          loading="lazy" />
+        <img src="img/borboleta decoração.webp" class="borboleta-canto direita" alt="Borboleta decorativa direita"
+          loading="lazy" />
       </section>
     </div>
 
-    <section id="produtos" class="animate">
-      <h2>Nossos Produtos</h2>
-      <div class="produto-box">
-        <!-- Produto 1 -->
-        <div class="produto-item">
-          <div class="produto-imagem">
-            <img src="img/bebe1.jpg" alt="Boneca Reborn 1" />
-          </div>
-          <div class="produto-nome">Boneca Reborn 1</div>
-          <div class="produto-preco">
-            <p>R$ 150,00</p>
-            <a href="#" class="butt">Comprar</a>
-          </div>
-        </div>
-
-        <!-- Produto 2 -->
-        <div class="produto-item">
-          <div class="produto-imagem">
-            <img src="img/bebe2.jpg" alt="Boneca Reborn 2" />
-          </div>
-          <div class="produto-nome">Boneca Reborn 2</div>
-          <div class="produto-preco">
-            <p>R$ 150,00</p>
-            <a href="#" class="butt">Comprar</a>
-          </div>
-        </div>
-
-        <!-- Produto 3 -->
-        <div class="produto-item">
-          <div class="produto-imagem">
-            <img src="img/bebe3.webp" alt="Boneca Reborn 3" />
-          </div>
-          <div class="produto-nome">Boneca Reborn 3</div>
-          <div class="produto-preco">
-            <p>R$ 150,00</p>
-            <a href="#" class="butt">Comprar</a>
-          </div>
-        </div>
-
-        <!-- Produto 4 -->
-        <div class="produto-item">
-          <div class="produto-imagem">
-            <img src="img/bebe4.jpg" alt="Boneca Reborn 4" />
-          </div>
-          <div class="produto-nome">Boneca Reborn 4</div>
-          <div class="produto-preco">
-            <p>R$ 150,00</p>
-            <a href="#" class="butt">Comprar</a>
-          </div>
-        </div>
-      </div>
+    <section id="flores" class="animate">
+      <h2>Conheça nossas flores</h2>
+      <a href="flores.html" class="button">Conheça</a>
     </section>
 
     <section id="canais" class="animate">
       <h2>Nossos Canais</h2>
       <p>Estamos no Instagram, WhatsApp e com atendimento exclusivo em nosso site. Queremos ouvir vocês!</p>
       <div class="canaxs">
-        <a href="https://www.instagram.com/byluria?igsh=cHZwbzd1eHo5ODQ0" target="_blank" aria-label="Instagram">
-          <img src="img/instagram.png" width="40" alt="Instagram" />
-        <a href="https://web.whatsapp.com/#" target="_blank" aria-label="WhatsApp">
-          <img src="img/whatsapp.png" width="40" alt="WhatsApp" />
+        <a href="https://www.instagram.com/byluria?igsh=cHZwbzd1eHo5ODQ0" target="_blank"
+          aria-label="Visitar Instagram da Lúria">
+          <img src="img/instagram.png" width="40" alt="Instagram" loading="lazy" />
         </a>
+        <a href="https://web.whatsapp.com/#" target="_blank" aria-label="Entrar em contato via WhatsApp">
+          <img src="img/whatsapp.png" width="40" alt="WhatsApp" loading="lazy" />
         </a>
       </div>
     </section>
@@ -130,75 +89,48 @@
       <p>Dúvidas, elogios ou sugestões? Entre em contato conosco!</p>
       <a href="#" class="button">Fale Conosco</a>
       <div class="social-icons">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/byluria?igsh=cHZwbzd1eHo5ODQ0" aria-label="Visitar Instagram da Lúria"
+          target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/#" aria-label="Entrar em contato via WhatsApp" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
       </div>
     </section>
   </main>
 
   <!-- SOBRE A LÚRIA -->
-<section id="sobre" class="animate">
-  <h2>Sobre a Lúria</h2>
-  <p>Na Lúria, acreditamos que toda criança e colecionador merece uma boneca que represente sua história. Criamos modelos únicos com acabamento artesanal, feitos com carinho, inclusão e representatividade. Nossa missão é transformar sonhos em realidade através de bonecas que tocam o coração.</p>
-</section>
+  <section id="sobre" class="animate">
+    <h2>Sobre a Lúria</h2>
+    <p>Na Lúria, acreditamos que toda criança e colecionador merece uma boneca que represente sua história. Criamos
+      modelos únicos com acabamento artesanal, feitos com carinho, inclusão e representatividade. Nossa missão é
+      transformar sonhos em realidade através de bonecas que tocam o coração.</p>
+  </section>
 
-<!-- FORMULÁRIO DE SUGESTÕES E FEEDBACK -->
-<section id="feedback" class="animate">
-  <h2>Sugestões & Feedbacks</h2>
-  <p>Nos diga como podemos melhorar! Sua opinião é essencial para continuarmos encantando nossos clientes.</p>
-  <form action="#" method="post" class="formulario-feedback">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+  <!-- FORMULÁRIO DE SUGESTÕES E FEEDBACK -->
+  <section id="feedback" class="animate">
+    <h2>Sugestões & Feedbacks</h2>
+    <p>Nos diga como podemos melhorar! Sua opinião é essencial para continuarmos encantando nossos clientes.</p>
+    <form action="#" method="post" class="formulario-feedback">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-    <button type="submit" class="button">Enviar</button>
-  </form>
-</section>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+  </section>
 
-<!-- CHATBOT SIMULADO -->
-<section id="chatbot" class="animate">
-  <h2>Fale com a Lúria</h2>
-  <p>Atendimento rápido via nosso assistente virtual.</p>
-  <a href="#" class="button">Abrir Chatbot</a>
-</section>
-
-<!-- META DE VENDAS -->
-<section id="meta" class="animate">
-  <h2>Meta de Vendas</h2>
-  <p>Nosso objetivo este mês é entregar <strong>90 bonecas únicas</strong> para pessoas incríveis como você!</p>
-  <div style="background: #fce4ec; padding: 15px; border-radius: 12px; text-align: center;">
-    <p style="font-size: 1.2rem; font-weight: bold;">Meta atual: 58/90 bonecas vendidas 🎉</p>
-    <progress value="58" max="90" style="width: 100%; height: 20px;"></progress>
-  </div>
-</section>
-
-<!-- MURAL DE CLIENTES -->
-<section id="depoimentos" class="animate">
-  <h2>Mural da Lúria</h2>
-  <p>Veja o carinho de quem já recebeu uma boneca especial:</p>
-  <div class="depoimentos-grid">
-    <div class="depoimento">
-      <p>“A boneca da minha filha é simplesmente perfeita. Ela se viu representada pela primeira vez!”</p>
-      <span>— Camila, mãe da Júlia</span>
-    </div>
-    <div class="depoimento">
-      <p>“Sou colecionador e nunca vi um acabamento tão lindo e inclusivo. Parabéns!”</p>
-      <span>— Roberto, colecionador</span>
-    </div>
-  </div>
-</section>
-
-<footer>
+  <footer>
     <p>Obrigada por nos visitar! © 2025 Lúria</p>
     <p>Site feito pelos Digas, com carinho 🫦🫶❤️🙄</p>
-    <img src="img/digas.png" width="150" alt="Assinatura Digas" />
+    <img src="img/digas.png" width="150" alt="Assinatura Digas" loading="lazy" />
   </footer>
 
+  <!-- Botão Voltar ao Topo -->
+  <button id="voltar-topo" aria-label="Voltar ao topo">↑</button>
 
   <!-- JavaScript -->
   <script>
@@ -216,28 +148,44 @@
     window.addEventListener('load', () => {
       setTimeout(() => {
         document.getElementById('intro').style.opacity = '0';
-        document.getElementById('intro').style.transform = 'scale(1.2)';
-      }, 1500);
+        document.getElementById('intro').style.transform = 'scale(1.1)';
+      }, 1000);
       setTimeout(() => {
         document.getElementById('intro').style.display = 'none';
-      }, 2500);
+      }, 1500);
     });
 
     const borboleta = document.getElementById('borboleta-seguidora');
     document.addEventListener('mousemove', (e) => {
       setTimeout(() => {
         borboleta.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-      }, 1000);
+      }, 200);
     });
 
-    document.addEventListener('mousemove', function(e) {
-      const glitter = document.createElement('div');
-      glitter.className = 'glitter';
-      glitter.style.left = e.clientX + 'px';
-      glitter.style.top = e.clientY + 'px';
-      document.body.appendChild(glitter);
-      setTimeout(() => glitter.remove(), 800);
+    document.addEventListener('mousemove', function (e) {
+      if (Math.random() > 0.7) {
+        const glitter = document.createElement('div');
+        glitter.className = 'glitter';
+        glitter.style.left = e.clientX + 'px';
+        glitter.style.top = e.clientY + 'px';
+        document.body.appendChild(glitter);
+        setTimeout(() => glitter.remove(), 600);
+      }
+    });
+
+    // Botão Voltar ao Topo
+    const voltarTopo = document.getElementById('voltar-topo');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        voltarTopo.style.display = 'block';
+      } else {
+        voltarTopo.style.display = 'none';
+      }
+    });
+    voltarTopo.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
+
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lúria - Conheça Ofélia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sofia&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.png" alt="Logo Lúria" class="logo" />
+        <div class="menu">
+            <a href="index.html" aria-label="Voltar para Home" tabindex="0">Home</a>
+            <a href="flores.html" aria-label="Voltar para Flores" tabindex="0">Flores</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Conheça Ofélia</h1>
+        <p>A boneca poética, com alma de artista e coração sensível.</p>
+    </header>
+
+    <main>
+        <section class="animate">
+            <div class="produto-item">
+                <div class="produto-imagem">
+                    <img src="img/ofelia.png" alt="Boneca Ofélia" loading="lazy" />
+                </div>
+                <h2>Detalhes</h2>
+                <p>Ofélia tem vestidos românticos e expressões delicadas, celebrando a emoção e a arte.</p>
+                <a href="#" class="button">Comprar Agora</a>
+            </div>
+            <img src="img/borboleta-decoration.webp" class="borboleta-canto esquerda" alt="Borboleta decorativa"
+                loading="lazy" />
+        </section>
+    </main>
+
+    <footer>
+        <p>Obrigada por nos visitar! © 2025 Lúria</p>
+        <p>Site feito pelos Digas, com carinho 🫦🫶❤️🙄</p>
+        <img src="img/digas.png" width="150" alt="Assinatura Digas" loading="lazy" />
+    </footer>
+
+    <script>
+        // Scripts de animação
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            const triggerBottom = window.innerHeight * 0.85;
+            sections.forEach(section => {
+                const boxTop = section.getBoundingClientRect().top;
+                if (boxTop < triggerBottom) {
+                    section.classList.add('animate');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
