@@ -12,25 +12,65 @@
   <!-- Ícones FontAwesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <!-- CSS Externo -->
-  <link rel="stylesheet" href="estilo.css" />
+  <!-- CSS -->
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff0f8, #f3d9f6, #beb3fc);
+      text-align: center;
+      color: #3268a8;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Sofia', cursive;
+      font-size: 3rem;
+      color: #3268a8;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(50, 104, 168, 0.3);
+    }
+
+    header img {
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(50, 104, 168, 0.25);
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #3268a8;
+      text-shadow: 1px 1px 4px rgba(50, 104, 168, 0.3);
+    }
+
+    .menu {
+      margin-top: 20px;
+    }
+
     .botao {
       display: inline-block;
-      padding: 10px 20px;
-      background: #e3b6e3;
-      color: #333;
-      border-radius: 8px;
+      padding: 12px 25px;
+      background: #e8c3f0;
+      color: #3268a8;
+      border-radius: 12px;
       text-decoration: none;
-      font-family: inherit;
       font-size: 1rem;
+      font-weight: 600;
       border: none;
       cursor: pointer;
-      margin: 5px;
+      margin: 8px;
+      transition: all 0.3s ease;
     }
 
     .botao:hover {
-      background: #d1a3d1;
+      background: #3268a8;
+      color: #fff;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 5px 15px rgba(50, 104, 168, 0.3);
     }
   </style>
 </head>
@@ -41,14 +81,17 @@
     <img src="flores.png" alt="flores" width="600">
   </header>
 
-  <h1>quem desejas conhecer</h1>
-  <a href="f1.html" class="button">Luria</a>
-  <a href="f2.html" class="button">Lilian</a>
-  <a href="f3.html" class="button">Nix Orchidée</a>
-  <a href="f4.html" class="button">Lune</a>
-  <a href="f5.html" class="button">Ofélia</a>
-  <a href="f6.html" class="button">Nina</a>
-  <a href="f7.html" class="button">Dante</a>
+  <h1>Quem desejas conhecer?</h1>
+
+  <div class="menu">
+    <a href="f1.html" class="botao">Lúria</a>
+    <a href="f2.html" class="botao">Lilian</a>
+    <a href="f3.html" class="botao">Nix Orchidée</a>
+    <a href="f4.html" class="botao">Lune</a>
+    <a href="f5.html" class="botao">Ofélia</a>
+    <a href="f6.html" class="botao">Nina</a>
+    <a href="f7.html" class="botao">Dante</a>
+  </div>
 </body>
 
-</html>
+</html>x
